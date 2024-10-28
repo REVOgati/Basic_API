@@ -1,0 +1,6 @@
+# Ignore all files in the virtual environment
+.venv/
+
+# Ignore specific files or directories
+migrations/
+instance/

@@ -1,0 +1,39 @@
+- This is a file explaining the different processes I used in order for This
+API to run.
+- It has a documentation of processes that do not exist in code that I worked on, e.g on the terminal
+
+
+When starting the project, you have set up the python environment and activate It
+
+Terminal:
+"python -m venv .venv " - Setup virtual environment and name it ".venv"
+
+Before activating it, I had to enable running of scripts in my system which had been disabled using:
+Set the Execution Policy Temporarily: You can set the execution policy to allow script execution for the current session only by running the following command:
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+This command will change the execution policy for the current PowerShell session only and will revert back to the previous setting once you close the window.
+
+- The command above enables scripting in the system.
+
+.\.venv\Scripts\Activate #Activates the python script. (The . in .venv is part of its name)
+
+
+Then, to install the dependencies we need, list them in a file requirements.txt, and then create a new file for our code called application.py. We can write code now after this, but keep your virtual environment running. 
+"pip install flask"
+"pip install flask-sqlalchemy"
+pip freeze > requirements.txt
+echo . > application.py
+
+I then created a .gitignore file to prevent tracking of unnecesary files by git such as the venv, logs, IDE configurations.
+And a .typeignore file as well 
+
+#Preparing the environment to run the script 
+Terminal:
+$env:FLASK_APP = "application.py"  #Command tells Flask which file to use as the main app
+$env:FLASK_ENV= "development" #Gets into development mode and shows all errros
+
+N/B : You’ll need to do these exports every time you start your terminal window. So always make sure to 
+Be in the right directory
+Activate your virtual environment
+Run your exports (Those starting with set)
