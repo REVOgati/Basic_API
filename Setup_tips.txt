@@ -37,3 +37,9 @@ N/B : You’ll need to do these exports every time you start your terminal windo
 Be in the right directory
 Activate your virtual environment
 Run your exports (Those starting with set)
+
+The  CRUd PROCESS performed in the terminal were as follows
+
+first, get into python interactive mode by using "python"
+
+Then:
