@@ -36,7 +36,7 @@ $env:FLASK_ENV= "development" #Gets into development mode and shows all errros
 N/B : You’ll need to do these exports every time you start your terminal window. So always make sure to 
 Be in the right directory
 Activate your virtual environment
-Run your exports (Those starting with set)
+Run your exports (Those starting with $env)
 
 The  CRUd PROCESS performed in the terminal were as follows
 
